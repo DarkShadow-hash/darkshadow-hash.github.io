@@ -13,10 +13,10 @@ The goal is to provide a risk model based on simulated trends that closely mirro
 _________________________________________________________________________________________
 ### State of the art
 During our researchs, we found some interesting projects that have already been conducted. Some inspiring projects were the following:
-Mostly AI
-Mostly AI specializes in creating synthetic datasets for insurance and other industries, focusing on privacy preservation and regulatory compliance. They provide tools for insurers to generate synthetic data that mimics real customer and claims data, helping to test models and manage risks without using sensitive data. 
-Hazy
-Hazy provides tools for generating privacy-preserving synthetic data, particularly for use in finance, insurance, and healthcare. Their platform can simulate large-scale data scenarios, which help insurers understand complex patterns in claims and customer behavior.
+
+- Mostly AI : specializes in creating synthetic datasets for insurance and other industries, focusing on privacy preservation and regulatory compliance. They provide tools for insurers to generate synthetic data that mimics real customer and claims data, helping to test models and manage risks without using sensitive data.
+
+- Hazy : provides tools for generating privacy-preserving synthetic data, particularly for use in finance, insurance, and healthcare. Their platform can simulate large-scale data scenarios, which help insurers understand complex patterns in claims and customer behavior.
 
 _________________________________________________________________________________________
 ### Contribution: What are we doing that is different?
@@ -47,15 +47,21 @@ Here is an overview of it:
 
 #### How was Use case 1 solved?
 
-We are trying to generate a dataset entirely from the constraints the user enters. To do this, we chose to use Faker, which is a python library used to generate fake or synthetic data, typically for testing, development, or other purposes where real data is not necessary or available. Faker can produce random personal data (ex: names) which is exactly what the user needs in case 1.
+We are trying to generate a dataset entirely from the constraints the user enters.
+
+To do this, we chose to use Faker, which is a python library used to generate fake or synthetic data, typically for testing, development, or other purposes where real data is not necessary or available. Faker can produce random personal data (ex: names) which is exactly what the user needs in case 1.
 
 #### How was Use case 2 solved?
 
-Our goal in this part of the project was for our generative AI to generate synthetic datasets with the same distributions and correlations as those in a dataset uploaded by the user. In order to reach this goal, after a lot of research, we decided to use CTGAN (Conditional Generative Adversarial Network) which is a machine learning model designed specifically for generating synthetic data that mirrors the distribution of real-world datasets. It is particularly useful when dealing with tabular data that may contain categorical and continuous features, which is a challenge for traditional GAN (Generative Adversarial Network) models. Moreover, CTGAN ensures that the generated data maintains the original distribution and relationships present in the real dataset.
+Our goal in this part of the project was for our generative AI to generate synthetic datasets with the same distributions and correlations as those in a dataset uploaded by the user. 
+
+In order to reach this goal, after a lot of research, we decided to use CTGAN (Conditional Generative Adversarial Network) which is a machine learning model designed specifically for generating synthetic data that mirrors the distribution of real-world datasets. It is particularly useful when dealing with tabular data that may contain categorical and continuous features, which is a challenge for traditional GAN (Generative Adversarial Network) models. Moreover, CTGAN ensures that the generated data maintains the original distribution and relationships present in the real dataset.
 
 #### How was Use case 3 solved?
 
-The third scenario consists of the user uploading a dataset. A synthetic dataset is generated based on the provided data while applying the user's constraints to the specified columns. This results in some columns having the same distributions as the original columns and some other columns having very different distributions if we compare them with the corresponding original columns. For instance, if we set a constraint for the column “age” (let’s say we want people from 20 to 30 years old) and that in the dataset the age range goes from 15 to 70 years old, when the graphs will be plotted, the distributions will be very different for the column “age”. 
+The third scenario consists of the user uploading a dataset. Then, a synthetic dataset is generated based on the provided data while applying the user's constraints to the specified columns. 
+
+This results in some columns having the same distributions as the original columns and some other columns having very different distributions if we compare them with the corresponding original columns. For instance, if we set a constraint for the column “age” (let’s say we want people from 20 to 30 years old) and that in the dataset the age range goes from 15 to 70 years old, when the graphs will be plotted, the distributions will be very different for the column “age”. 
 
 ______________________________________________________________________________________
 ### Results obtained 
