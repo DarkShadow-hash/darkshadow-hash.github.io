@@ -28,8 +28,8 @@ By adopting the user’s perspective, we identified three main use cases our gen
 -	Use case 2: Augmenting existing datasets by generating additional rows while preserving the original distributions and correlations
 -	Use case 3: Generating synthetic datasets from uploaded data while applying user-defined constraints to specific columns, enabling hybrid customization.
 For the last two use cases, we include visualizations so users can compare the distributions of the original and synthetic datasets. While some concepts may seem abstract at this stage, we will delve deeper into them later to provide a clearer understanding.
-_________________________________________________________________________________________
 
+_________________________________________________________________________________________
 ### Resources
 The project was completed by a team of four contributors: three other AI students and I, Hélène Capon.
 To conduct this project, we used our own personal computers as well as a consequent number of python libraries such as Faker, CTGAN, Pandas, Streamlit, Random, Matplotlib, Numpy and Datetime. 
@@ -54,16 +54,16 @@ Our goal in this part of the project was for our generative AI to generate synth
 #### How was Use case 3 solved?
 
 The third scenario consists of the user uploading a dataset. A synthetic dataset is generated based on the provided data while applying the user's constraints to the specified columns. This results in some columns having the same distributions as the original columns and some other columns having very different distributions if we compare them with the corresponding original columns. For instance, if we set a constraint for the column “age” (let’s say we want people from 20 to 30 years old) and that in the dataset the age range goes from 15 to 70 years old, when the graphs will be plotted, the distributions will be very different for the column “age”. 
-______________________________________________________________________________________
 
+______________________________________________________________________________________
 ### Results obtained 
 Despite having encountered numerous amounts of difficulties, we succeeded into building the three necessary use cases and in implementing them on an interface with streamlit, open-source Python framework for building and sharing interactive, data-driven web applications quickly and easily. 
 Our mission was accomplished because all the main goals were reached: 
 -	Successfully generated synthetic datasets with realistic distributions and correlations.
 -	Built a user-friendly platform that allows users to upload datasets, define constraints, and generate data efficiently.
 -	Overcame technical obstacles like tool incompatibilities and performance issues.
-______________________________________________________________________________________
 
+______________________________________________________________________________________
 ### Issues encountered during the project 
 
 This project was a new experience for us, as we had never built a generative AI before. Despite achieving our goal, we faced several challenges:
@@ -71,8 +71,8 @@ This project was a new experience for us, as we had never built a generative AI 
 -	Graph plotting issues: When table_evaluator became incompatible, we wrote custom scripts to evaluate the CTGAN model and compare datasets.
 -	Slow dataset generation: Generation time was significant for the third scenario but depended on selected constraints.
 -	UI creation: Limited expertise led us to discover Streamlit, which simplified the development process.
+  
 ______________________________________________________________________________________
-
 ### Areas of improvement
 -	Optimize dataset generation for large or highly constrained datasets.
 -	Improve the user interface to include more advanced visualization and customization options.
