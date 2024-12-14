@@ -1,5 +1,6 @@
 # Synthetic_Data_for_Insurance
-This repository contains all the codes and explanations of a project called "Synthetic Data for Insurance" I did with three other students. Have fun reading and implementing it and don't forget to rate this project !
+This repository contains all the codes and explanations of a project called "Synthetic Data for Insurance" I did with three other students. Have fun reading and implementing it and don't forget to give stars to this project if you like it !
+
 This project provides a Streamlit-based application for generating synthetic datasets using CTGAN (Conditional Generative Adversarial Networks), with customizable constraints on numeric and categorical columns. It enables users to upload datasets, set column constraints, and generate synthetic data while preserving original data distributions.
 _________________________________________________________________________________________________________
 Features
