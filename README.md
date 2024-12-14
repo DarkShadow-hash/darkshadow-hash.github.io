@@ -3,8 +3,9 @@
 
 ### Context: What is the problem and why does it matter?
 
-Our project aims to generate synthetic datasets specifically for the insurance field. To understand the positive impact synthetic data can have on the world, let’s have a look at a concrete example: Using Synthetic Data to Revolutionize Wheelchair Insurance
-Insurance for wheelchairs presents a unique challenge. Wheelchairs are costly, and the relatively small number of people requiring them makes it difficult for insurers to gather enough data to accurately estimate the frequency of claims or the associated costs. This lack of reliable data often results in insurers overestimating the risk and doubling premiums to cover uncertainties, making insurance prohibitively expensive for those who need it most.
+Our project aims to generate synthetic datasets specifically for the insurance field. To understand the positive impact synthetic data can have on the world, let’s have a look at a concrete example: Using Synthetic Data to Revolutionize Insurance for wheelchairs presents a unique challenge. 
+
+Wheelchairs are costly, and the relatively small number of people requiring them makes it difficult for insurers to gather enough data to accurately estimate the frequency of claims or the associated costs. This lack of reliable data often results in insurers overestimating the risk and doubling premiums to cover uncertainties, making insurance prohibitively expensive for those who need it most.
 
 To address this, we propose using synthetic data generation to simulate realistic scenarios. By creating artificial datasets that include information about individuals, accidents, health outcomes, and related costs, we can provide insurers with a comprehensive dataset to analyze. These datasets would include synthetic "people" experiencing various health outcomes, accidents, recoveries, and other events that insurance policies would cover.
 The goal is to provide a risk model based on simulated trends that closely mirror real-world behavior. With this approach, insurers can define fair and accurate pricing for wheelchair insurance, making it more accessible while maintaining profitability.
@@ -27,6 +28,7 @@ By adopting the user’s perspective, we identified three main use cases our gen
 -	Use case 1: Generating datasets from scratch based on user-specified columns and constraints.
 -	Use case 2: Augmenting existing datasets by generating additional rows while preserving the original distributions and correlations
 -	Use case 3: Generating synthetic datasets from uploaded data while applying user-defined constraints to specific columns, enabling hybrid customization.
+
 For the last two use cases, we include visualizations so users can compare the distributions of the original and synthetic datasets. While some concepts may seem abstract at this stage, we will delve deeper into them later to provide a clearer understanding.
 
 _________________________________________________________________________________________
