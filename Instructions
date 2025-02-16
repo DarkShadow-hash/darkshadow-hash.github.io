@@ -1,5 +1,5 @@
 How to run the codes ?
-Step 1 : download the code you need depending on the use case
+Step 1 : copy-paste the code you need depending on the use case and register it into a python file
 Step 2 : make sure to install all the necessary libraries (requirements.txt)
 Step 3 : open your terminal and type : streamlit run "path where your file is located"
 Step 4 : you have now access to a dataset generator, enjoy !
