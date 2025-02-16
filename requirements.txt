@@ -1,0 +1,13 @@
+📌 Required Libraries and Their Uses:
+Streamlit (streamlit) → For building and running the web app
+Pandas (pandas) → For handling and processing datasets
+Matplotlib (matplotlib) → For plotting graphs
+Seaborn (seaborn) → For advanced statistical plots
+CTGAN (ctgan) → For generating synthetic data
+OpenPyXL (openpyxl) → Needed for reading Excel files (.xlsx)
+Faker
+
+📌 System Requirements:
+Python 3.8+ (CTGAN may not support older versions)
+Pip installed (ensure pip is up-to-date: pip install --upgrade pip)
+Virtual Environment Recommended (to avoid dependency conflicts)
